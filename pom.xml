@@ -6,6 +6,8 @@
     <name>design_pattern</name>
     <version>0.0.1-SNAPSHOT</version>
     <dependencies>
+
+        <!-- json对应jar包-->
         <dependency>
             <groupId>net.sf.json-lib</groupId>
             <artifactId>json-lib</artifactId>
@@ -17,6 +19,7 @@
             <version>2.4</version>
             <classifier>jdk15</classifier>
         </dependency>
+        <!-- json对应jar包-->
     </dependencies>
 
 </project>
