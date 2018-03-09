@@ -11,10 +11,14 @@ public class Day20180309 {
         jsonObject.put("track",track);
         JSONObject trackObj = jsonObject.getJSONObject("track");
         JSONArray t_trackInfo = trackObj.getJSONArray("t_trackInfo");
-        if(t_trackInfo.isEmpty()){
-            System.out.println("t_trackInfo为空");
+        if(!t_trackInfo.isEmpty()){
+            JSONObject jsonObject1 = t_trackInfo.getJSONObject(t_trackInfo.size() - 1);
+            String stage = String.valueOf(jsonObject1.getInt("stage"));
+            System.out.println("获取到的stage为：" + stage);
+        } else {
+            System.out.println("t_trackInfo为空" + "新的分支");
+
         }
-            System.out.println(t_trackInfo.get(0));
 
     }
 }
