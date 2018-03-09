@@ -16,7 +16,7 @@ public class Day20180309 {
             String stage = String.valueOf(jsonObject1.getInt("stage"));
             System.out.println("获取到的stage为：" + stage);
         } else {
-            System.out.println("t_trackInfo为空" + "新的分支");
+            System.out.println("t_trackInfo为空" + "新的分支" + "测试分支合并");
 
         }
 
